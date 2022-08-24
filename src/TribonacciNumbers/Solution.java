@@ -1,7 +1,5 @@
 package TribonacciNumbers;
 
-import java.util.HashMap;
-
 public class Solution {
     public int tribonacci(int n) {
         if (n == 0) return 0;
@@ -24,11 +22,11 @@ public class Solution {
         return z;
     }
 
-    public int tribonacci_recurssion(int n){
+    public int tribonacci_recursion(int n){
         return n<=1? n :
                 (n == 2? 1 :
-                    tribonacci_recurssion(n-1) +
-                        tribonacci_recurssion(n-2) +
-                        tribonacci_recurssion(n-3));
+                    tribonacci_recursion(n-1) +
+                        tribonacci_recursion(n-2) +
+                        tribonacci_recursion(n-3));
     }
 }
